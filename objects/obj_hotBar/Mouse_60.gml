@@ -1,5 +1,4 @@
-/// @description Insert description here
+/// @description Change item
 
 selected ++
-
 selected %= size;

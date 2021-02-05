@@ -1,9 +1,8 @@
-/// @description Insert description here
+/// @description Player Hotbar
 
-world = ds_grid_create(room_width/16,room_height/16)
 
-debug = 1
 size = 3
+
 
 selected = 0
 items = ds_list_create()

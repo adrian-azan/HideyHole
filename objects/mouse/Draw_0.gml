@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description Highlight selected block
 
 
 with (targetBlock)
