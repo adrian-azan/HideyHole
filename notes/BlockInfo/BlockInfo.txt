@@ -1,0 +1,5 @@
+Air,0
+Dirt,1
+Coal,2
+Stone,3
+Iron,4

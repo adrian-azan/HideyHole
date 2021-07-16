@@ -1,4 +1,7 @@
 /// @description Jump
 
-
-ySpeed = -3.5
+if (canJump)
+{
+	ySpeed = -3.5
+	canJump = false
+}

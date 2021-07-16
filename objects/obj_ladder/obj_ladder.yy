@@ -1,16 +1,10 @@
 {
-  "spriteId": {
-    "name": "spr_ladder",
-    "path": "sprites/spr_ladder/spr_ladder.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "item",
-    "path": "objects/item/item.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -23,14 +17,12 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_ladder","path":"objects/obj_ladder/obj_ladder.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "items",
-    "path": "folders/Objects/items.yy",
+    "name": "ladders",
+    "path": "folders/Objects/items/ladders.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_ladder",

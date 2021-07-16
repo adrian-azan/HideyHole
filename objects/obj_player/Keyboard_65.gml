@@ -8,7 +8,7 @@ if (facing == 1)
 	drill.image_xscale *= -1
 }
 
-
-x += xSpeed * facing
+if (place_meeting(x+2*facing,y,obj_blockParent) == false)
+	x += xSpeed * facing
 
 

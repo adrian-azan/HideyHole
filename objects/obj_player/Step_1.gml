@@ -1,21 +1,23 @@
-/// @description Insert description here
+/// @description Adjust players motion
 
 if (ySpeed < ySpeedMax)
-	ySpeed += .2
+	ySpeed += .25;
 else
-	ySpeed = ySpeedMax
+	ySpeed = ySpeedMax;
+
 	
-xSpeed = 1.5
-if (position_meeting(x,y+bottom,obj_blockParent) or
-	position_meeting(x+,y+bottom,obj_blockParent) or
-	position_meeting(x,y+bottom,obj_blockParent)
-	position_meeting(x,y+bottom,obj_ladder))
+if (place_meeting(x,y+2,obj_blockParent))
 {
 	ySpeed = 0;	
+	canJump = true
 }
 
-var size = (abs(sprite_width/2)-5) * facing
 
-if (place_meeting(x+size,y,obj_blockParent))
-	xSpeed = 0;
+if (ySpeed < 0 and place_meeting(x,y-2,obj_blockParent))
+{
+	ySpeed *= -1	
+}
+
+
+
 

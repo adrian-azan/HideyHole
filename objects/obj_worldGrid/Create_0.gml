@@ -1,5 +1,9 @@
 /// @description Insert description here
-debug = 1
 
-world = ds_grid_create(room_width/16,room_height/16)
-ds_grid_set_region(world,0,0,room_width/16,room_height/16,-1)
+players = ds_list_create()
+players[|0] = instance_create_depth(room_width* 7/8,0,0,obj_player);
+
+world = noone
+blockSize = noone
+width = noone
+height = noone

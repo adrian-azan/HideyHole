@@ -1,7 +1,9 @@
 /// @description Climb Up
 
-if place_meeting(x,y,obj_ladder)
+if floor(place_meeting(x,y-2,obj_blockParent) == false and
+		place_meeting(x,y,obj_dirt_ladder))
 {
-	y-=.5
-	
+	ySpeed = -.4;
+	canJump = true;
+
 }
