@@ -12,6 +12,8 @@ debug = false;
 #macro STONE 3
 #macro IRON 4
 
+#macro SPAWN 10
+
 #macro BLOCK_SIZE 8
 
 global.recipes = ds_map_create()
@@ -36,6 +38,7 @@ var grid = obj_worldCreator.world
 obj_worldCreator.debug = true
 
 grid = diffusion(grid,80)
+
 
 //Coal generators
 for (var i = 0; i < 20;i++)

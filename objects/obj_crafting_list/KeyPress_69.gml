@@ -1,6 +1,18 @@
 /// @description Insert description here
-
-for (var i = 0; i < ds_list_size(craftables);i++)
+if (visible == true)// or master.player.inventory.showInventory == false)
 {
-	craftables[|i].visible = !craftables[|i].visible
+	for (var i = 0; i < ds_list_size(craftables);i++)
+	{
+		craftables[|i].visible = false
+	}
+	visible = false
+}
+
+else if (visible == false)
+{
+	for (var i = 0; i < ds_list_size(craftables);i++)
+	{
+		craftables[|i].visible = true;
+	}
+	visible = true
 }

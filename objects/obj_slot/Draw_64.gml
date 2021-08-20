@@ -2,10 +2,10 @@
 var dim = 64
 
 //if (!visible) exit;
-
+draw_sprite_stretched(sprite_index, -1,x,y,dim,dim)
 if( slotItem != noone)
 {
-	draw_sprite_stretched(object_get_sprite(slotItem),-1,x,y,dim,dim)	
+	draw_sprite_stretched(object_get_sprite(slotItem),-1,x+dim*.15,y+dim*.15,dim*.7,dim*.7)	
 	draw_set_color(c_white)
 	var amount = itemQuantity
 	draw_text(x,y+dim,string(amount))
@@ -26,6 +26,6 @@ if (text != noone)
 		draw_text(x,y+1/2*dim,string(text))
 }
 
-draw_sprite_stretched(sprite_index, -1,x,y,dim,dim)
+
 
 

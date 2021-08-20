@@ -7,3 +7,8 @@ worldGrid.world = world;
 worldGrid.height = height;
 worldGrid.width = width;
 worldGrid.blockSize = 8
+
+with (worldGrid)
+{
+	event_user(0);
+}

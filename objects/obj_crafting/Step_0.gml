@@ -1,8 +1,22 @@
 /// @description Insert description here
-
-if (craftSignal != noone and distance_to_object(player) < 3*BLOCK_SIZE)
+/*
+if (distance_to_object(player) > 3*BLOCK_SIZE)
 {
-		var ores = player.playerInventory.blockSack		
+	with (craftingList)
+		event_user(1)
+}
+else
+{
+	with (craftingList)
+		event_user(0)
+}
+*/
+
+
+
+if (craftSignal != noone)
+{
+		var ores = player.inventory.blockSack		
 		
 		for (var k = ds_map_find_first(ores); !is_undefined(k);
 			k = ds_map_find_next(ores,k))
@@ -13,8 +27,8 @@ if (craftSignal != noone and distance_to_object(player) < 3*BLOCK_SIZE)
 		}
 	
 			
-		var inventory = player.playerInventory.inventory
-		var hotbar = player.playerInventory.hotbar
+		var inventory = player.inventory.inventory
+		var hotbar = player.inventory.hotbar
 		var i = findItem(inventory,craftSignal)
 		var hi = findItem(hotbar,craftSignal)
 		if ( i != -1)

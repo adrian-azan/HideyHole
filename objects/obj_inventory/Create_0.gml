@@ -29,7 +29,7 @@ for (var i = 0; i < inventorySize;i++)
 {
 	ds_list_add(inventory,instance_create_depth(68*(i)+16,128,1000,obj_slot))
 	inventory[|i].owner = self
-	inventory[|i].visible = false;
+	inventory[|i].visible = true;
 }
 
 hotbar[|0].slotItem = obj_dirt_ladder;

@@ -1,6 +1,6 @@
 /// @description Insert description here
 
 
-x = obj_player.x+ obj_player.facing*3
-y = obj_player.y
+x = master.x+ master.facing*3
+y = master.y
 

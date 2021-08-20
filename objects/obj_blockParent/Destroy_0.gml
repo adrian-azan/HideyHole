@@ -2,7 +2,7 @@
 
 if (breaker == noone) exit;
 
-var sack = breaker.playerInventory.blockSack
+var sack = breaker.inventory.blockSack
 
 
 if (ds_map_exists(sack,object_index))

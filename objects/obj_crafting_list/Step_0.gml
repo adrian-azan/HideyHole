@@ -2,15 +2,14 @@
 
 
 
-if (craftSignal == noone and
-	master.player.playerInventory.showInventory == false) exit;
+if (!visible) exit;
 
 
 master.craftSignal = craftSignal
 craftSignal = noone
 
 var recipes = global.recipes
-var supplies = master.player.playerInventory.blockSack
+var supplies = master.player.inventory.blockSack
 var col = 1
 var row = 1
 
@@ -25,7 +24,6 @@ ds_list_clear(craftables)
 for (var r = ds_map_find_first(recipes); !is_undefined(r); r = ds_map_find_next(recipes, r)) 
 {
 	var craftable = true
-
 	for (var o = ds_map_find_first(recipes[?r]); !is_undefined(o); o = ds_map_find_next(recipes[?r],o))
 	{
 		if (is_undefined(recipes[?r][?o]))
@@ -40,11 +38,15 @@ for (var r = ds_map_find_first(recipes); !is_undefined(r); r = ds_map_find_next(
 	
 	if (craftable == true)
 	{
-		var button = instance_create_depth(10+(col*75),200+(row*75),100,but_crafting)
+		var xPos = display_get_gui_width()*.05
+		var yPos = display_get_gui_height() *.25
+		
+		var button = instance_create_depth(xPos+(col*75),yPos+(row*75),-100,but_crafting)
 		button.image_xscale = 4
 		button.image_yscale = 4
 		button.cover = r
 		button.master = self
+		button.visible = master.player.inventory.showInventory
 		ds_list_add(craftables, button)		
 		if (col % 5 == 0)
 		{

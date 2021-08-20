@@ -1,8 +1,8 @@
 /// @description Insert description here
-dim = 64
+
+event_inherited()
+
 slotItem = noone
 itemQuantity = 0
-owner = noone
-
 text = noone
 text_direction = noone

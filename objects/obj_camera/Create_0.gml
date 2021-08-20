@@ -8,8 +8,8 @@ camera_set_view_mat(camera,viewMatrix)
 camera_set_proj_mat(camera,projectionMatrix)
 
 view_camera[0] = camera
-
-follow = obj_player
+player = noone
+follow = noone
 zTo = -20;
 xTo = x;
 yTo = y

@@ -1,4 +1,6 @@
 /// @description Insert description here
+if (!visible) exit;
+
 var Mx = device_mouse_x_to_gui(0)
 var My = device_mouse_y_to_gui(0)
 

@@ -7,7 +7,10 @@
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_ladder",
+    "path": "objects/obj_ladder/obj_ladder.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,

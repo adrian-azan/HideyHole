@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"af84d988-bf59-4e1c-83cb-14b3c45dd644","path":"sprites/Sprite15/Sprite15.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"af84d988-bf59-4e1c-83cb-14b3c45dd644","path":"sprites/Sprite15/Sprite15.yy",},"LayerId":{"name":"6c48fc1a-7f19-4c96-8b80-5c9a28f31265","path":"sprites/Sprite15/Sprite15.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Sprite15","path":"sprites/Sprite15/Sprite15.yy",},"resourceVersion":"1.0","name":"af84d988-bf59-4e1c-83cb-14b3c45dd644","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"3ef355b5-affa-417d-bb7b-df5dcbb65c16","path":"sprites/spr_floorBoard/spr_floorBoard.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"3ef355b5-affa-417d-bb7b-df5dcbb65c16","path":"sprites/spr_floorBoard/spr_floorBoard.yy",},"LayerId":{"name":"d4e8ea48-3509-4dfc-a476-8f8a0b57fe19","path":"sprites/spr_floorBoard/spr_floorBoard.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_floorBoard","path":"sprites/spr_floorBoard/spr_floorBoard.yy",},"resourceVersion":"1.0","name":"3ef355b5-affa-417d-bb7b-df5dcbb65c16","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"Sprite15","path":"sprites/Sprite15/Sprite15.yy",},
+    "spriteId": {"name":"spr_floorBoard","path":"sprites/spr_floorBoard/spr_floorBoard.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"d089d5fd-7d54-442d-8751-17357fd9abeb","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"af84d988-bf59-4e1c-83cb-14b3c45dd644","path":"sprites/Sprite15/Sprite15.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"4c44b400-a208-423b-a411-321ea462b5c7","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3ef355b5-affa-417d-bb7b-df5dcbb65c16","path":"sprites/spr_floorBoard/spr_floorBoard.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,21 +58,22 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"Sprite15","path":"sprites/Sprite15/Sprite15.yy",},
+    "parent": {"name":"spr_floorBoard","path":"sprites/spr_floorBoard/spr_floorBoard.yy",},
     "resourceVersion": "1.3",
-    "name": "Sprite15",
+    "name": "spr_floorBoard",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"6c48fc1a-7f19-4c96-8b80-5c9a28f31265","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"d4e8ea48-3509-4dfc-a476-8f8a0b57fe19","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
-    "name": "blocks",
-    "path": "folders/Sprites/blocks.yy",
+    "name": "decoration",
+    "path": "folders/Sprites/decoration.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Sprite15",
+  "name": "spr_floorBoard",
   "tags": [],
   "resourceType": "GMSprite",
 }

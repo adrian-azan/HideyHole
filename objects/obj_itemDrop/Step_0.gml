@@ -8,7 +8,7 @@ if (distance_to_object(obj_player) < 10)
 	if (speed > maxSpeed) speed = maxSpeed;
 }
 
-else if(place_meeting(x,y+2,obj_blockParent))
+else if(place_meeting(x,y+2,obj_collidable))
 {
 	ySpeed = 0;
 }

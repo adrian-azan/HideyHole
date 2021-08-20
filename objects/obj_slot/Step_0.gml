@@ -16,7 +16,6 @@ if (mouse_check_button_pressed(mb_left) and point_in_rectangle(Mx,My,x,y,x+dim,y
 	slotItem = swap;
 	itemQuantity = swapQ;
 	
-	//draw_set_color(c_green)
-	//draw_rectangle(x,y,x+dim-1,y+dim-1,false)	
+		
 	
 }

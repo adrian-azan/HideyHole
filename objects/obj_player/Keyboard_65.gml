@@ -8,7 +8,7 @@ if (facing == 1)
 	drill.image_xscale *= -1
 }
 
-if (place_meeting(x+2*facing,y,obj_blockParent) == false)
+if (place_meeting(x+2*facing,y,obj_collidable) == false)
 	x += xSpeed * facing
 
 

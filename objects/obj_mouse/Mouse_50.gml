@@ -1,8 +1,8 @@
 /// @description Place Item
-
+if (distance_to_object(player) >=4*BLOCK_SIZE) exit;
 
 //Need to add distance from player check
-with (player.playerInventory)
+with (player.inventory)
 {
 	var blockSize = obj_worldGrid.blockSize
 	var i = hotbar[|selected]	

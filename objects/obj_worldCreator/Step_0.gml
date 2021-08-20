@@ -3,6 +3,8 @@
 if (instance_exists(Turtle))exit;
 
 if (DEBUG.debug) show_debug_message("CREATING")
+
+placePlayer(world)
 for (var row = 0; row < ds_grid_height(world); row ++)
 {
 	for (var col = 0; col < ds_grid_width(world); col ++)
@@ -17,9 +19,11 @@ for (var row = 0; row < ds_grid_height(world); row ++)
 		else if (spot == COAL)
 			instance_create_depth(xCell,yCell,-100,obj_coal)
 		else if (spot == IRON )
-			instance_create_depth(xCell,yCell,-100,obj_iron)
+			instance_create_depth(xCell,yCell,-100,obj_iron)			
+		else if (spot == SPAWN)
+			instance_create_depth(xCell,yCell,-100,obj_player)
 		
-		
+	
 	}	
 }
 

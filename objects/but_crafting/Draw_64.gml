@@ -1,5 +1,7 @@
 /// @description Insert description here
 
+
+
 if (cover == noone) exit;
 
 draw_self()
